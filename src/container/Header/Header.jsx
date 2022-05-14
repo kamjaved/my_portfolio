@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import ExampleDoc from '../../assets/SubhajitPaul_Resume.pdf'
+import ExampleDoc from '../../assets/Kamran Resume 2022.pdf'
 import { AppWrap } from '../../wrapper';
 import {FiDownload} from 'react-icons/fi'
 import { images } from '../../constants';

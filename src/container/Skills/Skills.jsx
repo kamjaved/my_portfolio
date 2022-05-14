@@ -25,7 +25,7 @@ const Skills = () => {
     });
   }, []);
 
-  console.log('EXP', experiences)
+  // console.log('EXP', experiences)
   return (
     <>
       <h2 className="head-text">Skills & Experiences</h2>
