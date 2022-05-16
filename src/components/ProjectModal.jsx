@@ -7,22 +7,22 @@ import './ProjectModal.scss';
 const ProjectModal = props => {
   return (
 
-    <Container className="d-flex justify-content-center ">
       <Modal
         size="xl"
+        backdrop="static"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-        className="modal fade primary"
+        className="modalBS"
         tabindex="-1"
         show={props.show}
         onHide={props.onHide}
       >
-        <Modal.Dialog className="modal-xl">
-          <div className="modal-content d-flex">
+        
+         
             <Modal.Header className="modal-header" closeButton>
-              <h5 className="modal-title" id="contained-modal-title-vcenter">
+              <Modal.Title className="modal-title" id="contained-modal-title-vcenter" >
                 {props.data && props.data.title}
-              </h5>
+              </Modal.Title>
             </Modal.Header>
 
             <Modal.Body className="modal-body">
@@ -110,12 +110,10 @@ const ProjectModal = props => {
                 </div>
               </div>
             </Modal.Body>
-          </div>
-        </Modal.Dialog>
+        
 
         {/* {console.log(props)} */}
       </Modal>
-    </Container>
   );
 };
 
