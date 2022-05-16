@@ -8,12 +8,32 @@ export default {
       title: 'Title',
       type: 'string',
     },
-  
+
+    {
+      name: 'company',
+      title: 'Company',
+      type: 'string',
+    },
+
+    {
+      name: 'client',
+      title: 'Client',
+      type: 'string',
+    },
+
+      
     {
       name: 'description',
       title: 'Description',
       type: 'string',
     },
+
+    {
+      name: 'duration',
+      title: 'Duration',
+      type: 'string',
+    },
+
     {
       name: 'projectLink',
       title: 'Project Link',
@@ -32,10 +52,10 @@ export default {
         hotspot: true,
       },
     },
- 
+
     {
-      name: 'tags',
-      title: 'Tags',
+    name: 'tags',
+    title: 'Tags',
      type:'array',
      of: [
        {
@@ -45,6 +65,19 @@ export default {
        }
      ]
     },
+
+    {
+      name: 'resposnibility',
+      title: 'Responsibility',
+       type:'array',
+       of: [
+         {
+           name:'role',
+           title:'Role',
+           type:'string'
+         }
+       ]
+      },
    
   ],
 };
