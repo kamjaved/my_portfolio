@@ -3,7 +3,8 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import './Navbar.scss';
 import { images } from '../../constants';
 import { motion } from 'framer-motion';
-function Navbar() {
+
+function Navbar({active}) {
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -12,10 +13,10 @@ function Navbar() {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className='app__navbar-links'>
-        {['home', 'about', 'work', 'skills',  'testimonial', 'contact'].map(item => (
+        {['home', 'about', 'work', 'skills',  'testimonial', 'contact'].map((item, index) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
-            <a href={`#${item}`}>{item}</a>
+            <a href={`#${item}`} style={active === item ? { color: '#313BAC' } : {}} >{item}</a>
           </li>
         ))}
       </ul>

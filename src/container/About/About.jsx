@@ -26,9 +26,9 @@ const About = () => {
             key={about.title + index}
           >
              <img src={urlFor(about.imgUrl)} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
+            <h4 className="bold-text" style={{ marginTop: 20, textAlign:'center'}}>
               {about.title}
-            </h2>
+            </h4>
             <p className="p-text" style={{ marginTop: 10 }}>
               {about.description}
             </p>
