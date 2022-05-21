@@ -32,14 +32,35 @@ const ProjectModal = props => {
                     <table className="table table-borderless">
                       <tbody>
                         <tr className='d-flex justify-content-between'>
-                          <td >
+
+                        <td>
+                            <div className="d-flex flex-column">
+                              <span className="heading d-block">
+                                Tools & Technology
+                              </span>
+                              <span className="subheadings">
+                                  {props.data && props.data.tags.map((i)=>(
+                                    <>
+                                    <Badge pill bg="primary">
+                                      {i}
+                                    </Badge>
+                                     {' '}
+                                    </>
+                                    
+                                  ))}
+                              </span>
+                            </div>
+                          </td>
+
+                          {/* <td >
                             <div className="flex-column">
                               <span className="heading d-block">Client</span>
                               <span className="subheadings">
                               {props.data && props.data.client}
                               </span>
                             </div>
-                          </td>
+                          </td> */}
+
                           <td >
                             <div className="flex-column">
                               <span className="heading d-block">Duration</span>
@@ -49,7 +70,7 @@ const ProjectModal = props => {
                             </div>
                           </td>
                         </tr>
-                        <tr>
+                        {/* <tr>
                           <td>
                             <div className="d-flex flex-column">
                               <span className="heading d-block">
@@ -70,7 +91,7 @@ const ProjectModal = props => {
                           </td>
                           
                         
-                        </tr>
+                        </tr> */}
                         <tr>
                           <td>
                             <div className="d-flex flex-column">
